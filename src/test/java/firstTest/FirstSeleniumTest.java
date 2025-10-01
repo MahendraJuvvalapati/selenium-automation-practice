@@ -14,6 +14,8 @@ public class FirstSeleniumTest {
 
         // Maximize window BEFORE entering URL
         driver.manage().window().maximize();
+        
+        System.out.println("Maximizing Window......");
 
         // Implicit wait for all elements
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -34,13 +36,15 @@ public class FirstSeleniumTest {
         loginBtn.click();
 
         // Verify Dashboard text in page
-        String pageSource = driver.getPageSource();
-        if (pageSource.contains("Dashboard")) {
-            System.out.println("Dashboard text found. Login successful.");
-        } else {
-            System.out.println("Dashboard text NOT found. Login may have failed.");
-        }
+        WebElement dashboardHeader = driver.findElement(By.xpath("//h6[text()='Dashboard']"));
+        String text = dashboardHeader.getText();
 
+        if (text.contains("Dashboard")) {
+            System.out.println("Dashboard found. Login successful.");
+        } else {
+            System.out.println("Dashboard not found.");
+        }
+        System.out.println("Closing Driver....");
         driver.quit();
     }
 }
