@@ -35,7 +35,7 @@ public class HandlingCheckBoxes {
 		{
 			checkBoxes.get(i).click();
 		}
-//	    checking in unchecked/ unchecking if checked
+//	    checking if unchecked/ unchecking if checked
 		for(int i=0;i<checkBoxes.size();i++)
 		{
 			WebElement element = checkBoxes.get(i);
