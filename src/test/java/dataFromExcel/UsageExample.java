@@ -46,7 +46,7 @@ public class UsageExample {
 			
 			driver.findElement(By.cssSelector("button[type='submit']")).click();
 			
-			System.out.println("Performing login with "+userName+" "+password);
+			System.out.print("Performing login with "+userName+" "+password+" : ");
 			
 			boolean isValid=driver.getPageSource().contains("Invalid credentials");
 			
