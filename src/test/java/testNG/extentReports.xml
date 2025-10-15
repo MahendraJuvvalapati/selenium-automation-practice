@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ListenerSuite">
+
+    <!-- Attach listeners at suite level -->
+    <listeners>
+        <listener class-name="testNG.Extent_Reports"/> 
+    </listeners>
+
+    <test name="ListenerTest">
+        <classes>
+            <!-- Your test class -->
+            <class name="testNG.Listener"/>
+            <class name="testNG.FirstTest"/>
+            
+        </classes>
+    </test>
+
+</suite>
