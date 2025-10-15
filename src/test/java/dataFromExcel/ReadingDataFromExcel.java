@@ -13,7 +13,7 @@ public class ReadingDataFromExcel {
 		
 		
 //		#fileLocation
-		File fileLoc=new File("D:\\Automation practice\\javaSelenium\\com.demo.selenium\\TestData\\Books.xlsx");
+		File fileLoc=new File(System.getProperty("user.dir") + "\\TestData\\Books.xlsx");
 		
 //		#file input stream for reading data
 		FileInputStream fis = new FileInputStream(fileLoc);

@@ -49,7 +49,7 @@ public class Parallel2 {
 	@DataProvider(name="loginData",parallel = true)
 	public String[][] getExcelData() throws IOException
 	{
-		String filepath = "D:\\Automation practice\\javaSelenium\\com.demo.selenium\\TestData\\credentials.xlsx";
+		String filepath = System.getProperty("user.dir") + "\\TestData\\credentials.xlsx";
 		
 		String SheetName = "Sheet1";
 		return ExcelUtils.loginData(filepath, SheetName);

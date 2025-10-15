@@ -23,7 +23,7 @@ public class UsageExample {
 		
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	
-		String fileLoc="D:\\Automation practice\\javaSelenium\\com.demo.selenium\\TestData\\credentials.xlsx";
+		String fileLoc=System.getProperty("user.dir") + "\\TestData\\credentials.xlsx";
 		
 		FileInputStream fis = new FileInputStream(fileLoc);
 		

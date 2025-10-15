@@ -14,7 +14,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class WritingDataIntoExcel {
 
 	public static void main(String[] args) throws IOException {
-		File fileLoc = new File("D:\\Automation practice\\javaSelenium\\com.demo.selenium\\TestData\\Write.xlsx");
+		File fileLoc = new File(System.getProperty("user.dir") + "\\TestData\\Write.xlsx");
 
 //		#file output stream for writing data
 		FileOutputStream fos = new FileOutputStream(fileLoc);

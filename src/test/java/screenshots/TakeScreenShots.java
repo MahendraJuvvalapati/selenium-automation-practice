@@ -23,7 +23,7 @@ public class TakeScreenShots {
 //		Full page Screenshot
 		File fullScr = ts.getScreenshotAs(OutputType.FILE);
 		
-		File fullscrDest = new File("D:\\Automation practice\\javaSelenium\\com.demo.selenium\\screenshots\\FullPage.png");
+		File fullscrDest = new File(System.getProperty("user.dir") + "\\screenshots\\FullPage.png");
 		
 //		#copying the screenhot to target loc
 		fullScr.renameTo(fullscrDest);
@@ -35,7 +35,7 @@ public class TakeScreenShots {
 		
 		File partscr = ele.getScreenshotAs(OutputType.FILE);
 		
-		File partscrDest = new File("D:\\Automation practice\\javaSelenium\\com.demo.selenium\\screenshots\\somePart.png");
+		File partscrDest = new File(System.getProperty("user.dir") + "\\screenshots\\somePart.png");
 		
 		partscr.renameTo(partscrDest);
 		
@@ -47,7 +47,7 @@ public class TakeScreenShots {
 		
 		File  elementScr= element.getScreenshotAs(OutputType.FILE);
 		
-		File elementScrDest = new File("D:\\Automation practice\\javaSelenium\\com.demo.selenium\\screenshots\\element.png");
+		File elementScrDest = new File(System.getProperty("user.dir") + "\\screenshots\\element.png");
 		
 		elementScr.renameTo(elementScrDest);
 		
