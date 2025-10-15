@@ -16,7 +16,7 @@ public class SingleFileUpload {
 
 		driver.get("https://testautomationpractice.blogspot.com/");
 		
-		String fileLocation="D:\\Automation practice\\javaSelenium\\com.demo.selenium\\src\\test\\resources\\file1.txt";
+		String fileLocation=System.getProperty("user.dir") + "\\TestData\\file1.txt";
 		
 		WebElement fileUpload = driver.findElement(By.xpath("//input[@id='singleFileInput']"));
 		

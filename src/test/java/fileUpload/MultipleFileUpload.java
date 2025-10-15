@@ -15,9 +15,9 @@ public class MultipleFileUpload {
 
 		driver.get("https://testautomationpractice.blogspot.com/");
 		
-		String fileLocation1="D:\\Automation practice\\javaSelenium\\com.demo.selenium\\src\\test\\resources\\file1.txt";
+		String fileLocation1=System.getProperty("user.dir") + "\\TestData\\file1.txt";
 		
-		String fileLocation2="D:\\Automation practice\\javaSelenium\\com.demo.selenium\\src\\test\\resources\\file2.txt";
+		String fileLocation2=System.getProperty("user.dir") + "\\TestData\\file2.txt";
 		
 		WebElement multipleFileUpload = driver.findElement(By.xpath("//input[@id='multipleFilesInput']"));
 		

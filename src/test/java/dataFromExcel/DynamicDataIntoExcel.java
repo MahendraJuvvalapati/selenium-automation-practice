@@ -13,7 +13,7 @@ public class DynamicDataIntoExcel {
 
     public static void main(String[] args) throws IOException {
 
-        File fileLoc = new File("D:\\Automation practice\\javaSelenium\\com.demo.selenium\\TestData\\dynamic.xlsx");
+        File fileLoc = new File(System.getProperty("user.dir") + "\\TestData\\dynamic.xlsx");
 
         Scanner sc = new Scanner(System.in);
 

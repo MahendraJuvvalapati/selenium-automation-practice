@@ -15,7 +15,7 @@ public class ExistingFile {
     public static void main(String[] args) throws IOException {
 
         // Path to existing Excel file
-        File fileLoc = new File("D:\\Automation practice\\javaSelenium\\com.demo.selenium\\TestData\\dynamic.xlsx");
+        File fileLoc = new File(System.getProperty("user.dir") + "\\TestData\\dynamic.xlsx");
 
         // Open existing file
         FileInputStream fis = new FileInputStream(fileLoc);

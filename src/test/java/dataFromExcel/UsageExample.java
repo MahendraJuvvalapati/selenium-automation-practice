@@ -23,7 +23,7 @@ public class UsageExample {
 		
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	
-		String fileLoc="D:\\Automation practice\\javaSelenium\\com.demo.selenium\\TestData\\credentials.xlsx";
+		String fileLoc=System.getProperty("user.dir") + "\\TestData\\credentials.xlsx";
 		
 		FileInputStream fis = new FileInputStream(fileLoc);
 		
@@ -46,7 +46,7 @@ public class UsageExample {
 			
 			driver.findElement(By.cssSelector("button[type='submit']")).click();
 			
-			System.out.println("Performing login with "+userName+" "+password);
+			System.out.print("Performing login with "+userName+" "+password+" : ");
 			
 			boolean isValid=driver.getPageSource().contains("Invalid credentials");
 			
